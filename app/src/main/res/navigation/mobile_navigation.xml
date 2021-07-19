@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.moviesnight.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_favour"
+        android:name="com.example.moviesnight.FaviouratFragment"
+        android:label="Favourite"
+        android:icon="@drawable/ic_favorite"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.example.moviesnight.AccountFragment"
+        android:label="Account"
+        android:icon="@drawable/ic_baseline_person_24"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>

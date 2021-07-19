@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:layout_marginTop="8dp"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:layout_margin="20dp"
+           android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:padding="16dp"
+            android:text="Movie 1"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+
+        <com.like.LikeButton
+            app:icon_type="heart"
+            app:icon_size="10dp"
+            android:id="@+id/likebutton"
+            android:layout_below="@+id/imageView"
+            android:layout_marginLeft="270dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
